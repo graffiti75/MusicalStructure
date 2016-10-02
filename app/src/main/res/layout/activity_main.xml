@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_300"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+
+    <include layout="@layout/toolbar" />
+
+    <!-- Header -->
+
+    <TextView
+        style="@style/HeaderTextView"
+        android:text="@string/activity_main__music_library" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500" />
+
+    <!-- Content -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_activity_main__recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="@string/activity_main__music_selected"
+            android:textColor="@color/grey_700"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_activity_main__current_music_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/activity_main__no_music_selected"
+            android:textColor="@color/grey_700"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/id_activity_main__button"
+            style="@style/BottomButton"
+            android:layout_gravity="bottom|right"
+            android:text="@string/activity_main__play_song" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_300"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+
+    <include layout="@layout/toolbar" />
+
+    <!-- Header -->
+
+    <TextView
+        style="@style/HeaderTextView"
+        android:text="@string/activity_details__now_playing" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_500" />
+
+    <!-- Artist -->
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/activity_details__artist" />
+
+    <TextView
+        android:id="@+id/id_activity_details__artist_text_view"
+        style="@style/ContentTextView" />
+
+    <!-- Album -->
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/activity_details__album" />
+
+    <TextView
+        android:id="@+id/id_activity_details__album_text_view"
+        style="@style/ContentTextView" />
+
+    <!-- Title -->
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/activity_details__title" />
+
+    <TextView
+        android:id="@+id/id_activity_details__title_text_view"
+        style="@style/ContentTextView" />
+
+    <!-- Duration -->
+
+    <TextView
+        style="@style/TitleTextView"
+        android:text="@string/activity_details__duration" />
+
+    <TextView
+        android:id="@+id/id_activity_details__duration_text_view"
+        style="@style/ContentTextView" />
+
+    <!-- Button -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/id_activity_details__back_to_library_button"
+        style="@style/BottomButton"
+        android:layout_gravity="bottom|left"
+        android:text="@string/activity_details__back_to_library" />
+</LinearLayout>

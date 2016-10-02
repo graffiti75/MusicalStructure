@@ -1,0 +1,26 @@
+<resources>
+    <!--=============== APPLICATION ===============-->
+
+    <string name="app_name">Musical Structure</string>
+    <string name="permissions_denial">Para utilizar este aplicativo, você precisa aceitar as permissões.</string>
+
+    <!--=============== SCREENS ===============-->
+
+    <!-- Main Activity -->
+
+    <string name="activity_main__music_library">Biblioteca de Músicas</string>
+    <string name="activity_main__music_selected">Música Selecionada</string>
+    <string name="activity_main__no_music_selected">&#60; Nenhuma &#62;</string>
+    <string name="activity_main__play_song">Executar Música</string>
+    <string name="activity_main__please_select_a_song">Por favor, selecione uma música.</string>
+
+    <!-- Detail Activity -->
+
+    <string name="activity_details__parent_title">Detalhes da Música</string>
+    <string name="activity_details__now_playing">Tocando Agora</string>
+    <string name="activity_details__artist">Artista</string>
+    <string name="activity_details__album">Álbum</string>
+    <string name="activity_details__title">Título</string>
+    <string name="activity_details__duration">Duração</string>
+    <string name="activity_details__back_to_library">Voltar à Biblioteca</string>
+</resources>
